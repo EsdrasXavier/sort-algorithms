@@ -1,2 +1,8 @@
-# sort-algorithms
-Some sort algorithms in python
+# Sort Algorithms
+
+A module builded with multiple sorting algorithms using python.
+
+## All algorithms implemented
+
+- Bubble Sort
+- Recursiove Bubble Sort
