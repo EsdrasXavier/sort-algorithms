@@ -57,7 +57,7 @@ def quick_sort(arr, *args, **kwargs):
   arr[i + 1], arr[high] = arr[high], arr[i + 1]
   pi = i + 1
 
-  quick_sort(arr, low=low, high=pi-1)
+  quick_sort(arr, low=low   , high=pi-1)
   quick_sort(arr, low=pi + 1, high=high)
 
 

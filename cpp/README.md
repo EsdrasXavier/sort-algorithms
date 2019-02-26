@@ -6,14 +6,13 @@ A lib builded with multiple sorting algorithms using c++.
 
 - Bubble Sort
 - Recursive Bubble Sort
-
+- Quick Sort
 
 ## TODO
 #### Implement all agorithms bellow
 
 - Selection Sort
 - Insertion Sort
-- Quick Sort
 - Merge sort
 - Recursive Insertion Sort
 - Iterative Merge Sort

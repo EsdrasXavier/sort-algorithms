@@ -16,7 +16,7 @@ int main(int argv, char *argc[]) {
 
   int arr[ARRAY_LENGHT] = {5, 2, 4, 9, 8, 3, 1, 7, 2, 6};
 
-  recursiveBubbleSort(arr, ARRAY_LENGHT);
+  quickSort(arr, 0, ARRAY_LENGHT - 1);
 
   for (int i = 0; i < ARRAY_LENGHT; i++)
     cout << arr[i] << ", ";
