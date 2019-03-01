@@ -1,3 +1,12 @@
+def get_bigger(arr):
+  bigger = arr[0]
+
+  for i in arr:
+    if i > bigger:
+      bigger = i
+
+  return bigger
+
 
 def bubble_sort(arr):
   arr_len = len(arr)
@@ -91,3 +100,26 @@ def merge_sort(arr):
   for l in range(j, len(right)):
     arr[k] = right[l]
     k += 1
+
+
+def counting_sort(arr):
+
+  arr_len = len(arr)
+  bigger = get_bigger(arr)
+
+  aux_arr = [0 for i in range(bigger)]
+
+  for i in range(arr_len):
+    aux_arr[arr[i] - 1] += 1
+
+  for i in range(1, bigger):
+    aux_arr[i] += aux_arr[i - 1]
+
+  aux_arr2 = [0 for i in range(arr_len)]
+
+  for i in range(len(aux_arr2)):
+    aux_arr2[aux_arr[arr[i] - 1] - 1] = arr[i]
+    aux_arr[arr[i] - 1] -= 1
+
+  for i in range(len(aux_arr2)):
+    arr[i] = aux_arr2[i]

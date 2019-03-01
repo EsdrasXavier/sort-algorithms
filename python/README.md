@@ -10,6 +10,7 @@ A module builded with multiple sorting algorithms using python.
 - Insertion Sort
 - Quick Sort
 - Merge sort
+- Counting Sort
 
 ## TODO
 #### Implement all agorithms bellow
@@ -18,7 +19,6 @@ A module builded with multiple sorting algorithms using python.
 - Iterative Merge Sort
 - Iterative Quick Sort
 - Heap Sort
-- Counting Sort
 - Radix Sort
 - Bucket Sort
 - ShellSort
