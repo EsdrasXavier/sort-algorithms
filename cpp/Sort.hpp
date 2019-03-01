@@ -44,3 +44,27 @@ void quickSort(int *arr, int low, int high) {
   quickSort(arr, low  , i - 1);
   quickSort(arr, i + 1, high);
 }
+
+void countingSort(int *arr, int len) {
+  int bigger = arr[0];
+
+  for (int i = 0; i < len; i++)
+    if (arr[i] > bigger) bigger = arr[i];
+
+  int aux_arr[bigger] = { 0 };
+  int aux_arr2[len] = { 0 };
+
+  for (int i = 0; i < len; i++)
+    aux_arr[arr[i] - 1] += 1;
+
+  for (int i = 1; i < bigger; i++)
+    aux_arr[i] += aux_arr[i - 1];
+
+  for (int i = 0; i < len; i++) {
+    aux_arr2[aux_arr[arr[i] - 1] - 1] = arr[i];
+    aux_arr[arr[i] - 1]--;
+  }
+
+  for (int i = 0; i < len; i++)
+    arr[i] = aux_arr2[i];
+}

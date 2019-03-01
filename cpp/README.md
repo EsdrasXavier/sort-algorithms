@@ -7,6 +7,7 @@ A lib builded with multiple sorting algorithms using c++.
 - Bubble Sort
 - Recursive Bubble Sort
 - Quick Sort
+- Counting Sort
 
 ## TODO
 #### Implement all agorithms bellow
@@ -18,7 +19,7 @@ A lib builded with multiple sorting algorithms using c++.
 - Iterative Merge Sort
 - Iterative Quick Sort
 - Heap Sort
-- Counting Sort
+
 - Radix Sort
 - Bucket Sort
 - ShellSort
